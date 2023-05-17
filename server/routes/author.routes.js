@@ -1,12 +1,12 @@
-const authorController = require("../controllers/author.controller");
+const pirateController = require("../controllers/pirate.controller");
 
 module.exports = (app) => {
-  app.get("/api/authors", authorController.findAllAuthors);
-  app.get("/api/authors/:id", authorController.findOneAuthor);
+  app.get("/api/pirates", pirateController.findAllPirates);
+  app.get("/api/pirates/:id", pirateController.findOnePirate);
 
-  app.post("/api/authors", authorController.createNewAuthor);
+  app.post("/api/pirates", pirateController.createNewPirate);
 
-  app.patch("/api/authors/:id", authorController.updateOneAuthor);
+  app.patch("/api/pirates/:id", pirateController.updateOnePirate);
 
-  app.delete("/api/authors/:id", authorController.deleteOneAuthor);
+  app.delete("/api/pirates/:id", pirateController.deleteOnePirate);
 };
