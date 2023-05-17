@@ -28,11 +28,11 @@ const pirateSchema = new mongoose.Schema({
     type: String,
     required: [
       true,
-      "Give us a catch phrase or two to yell during boarding parties!",
+      "Give us a catchphrase or two to yell during boarding parties!",
     ],
     minLength: [
       3,
-      "Catch phrases need at least (3) characters. Them's the rules!",
+      "Catchphrases need at least (3) characters. Them's the rules!",
     ],
   },
   crewPosition: {
