@@ -48,8 +48,7 @@ module.exports.createNewPirate = (request, response) => {
     .create({request.body})
     @param: the body/data of the client request
   */
-  const { name } = request.body;
-  Pirate.create({ name })
+  Pirate.create(request.body)
     .then((newPirate) => {
       console.log({ results: newPirate });
       response.status(200).json({ results: newPirate });
